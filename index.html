@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="icon" href="port_image/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body class="poppins-medium">
+
+    <header>
+        <nav id="Desktp">
+            <div class="lef_nav">
+                <span class="poppins-extralight"><a style="text-decoration: none; color: #ffffff;"
+                        href="#">Sahil</a></span>
+                <span id="dot">.</span>
+            </div>
+
+
+            <div class="rig_nav1">
+                <ul>
+                    <a class="poppins-thin one" href="#home">
+                        <li class="nav-item">Home</li>
+                    </a>
+                    <a class="poppins-thin" href="#about">
+                        <li class="nav-item">About</li>
+                    </a>
+                    <a class="poppins-thin" href="#skills">
+                        <li class="nav-item">Skills</li>
+                    </a>
+                    <a class="poppins-thin" href="#Project">
+                        <li class="nav-item">Projects</li>
+                    </a>
+                    <a class="poppins-thin" href="#contact">
+                        <li class="nav-item">Contact Me</li>
+                    </a>
+                </ul>
+            </div>
+
+            </div>
+        </nav>
+
+        <nav id="hamberger">
+
+            <div class="lef_nav">
+                <span class="poppins-extralight"><a style="text-decoration: none; color: #ffffff;"
+                        href="#">Sahil</a></span>
+                <span id="dot">.</span>
+            </div>
+
+            <div class="hamberger-menu">
+                <div class="hamberger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <a class="poppins-thin one" href="#home" onclick="toggleMenu()">
+                        <li>Home</li>
+                    </a>
+                    <a class="poppins-thin" href="#about" onclick="toggleMenu()">
+                        <li>About</li>
+                    </a>
+                    <a class="poppins-thin" href="#skills" onclick="toggleMenu()">
+                        <li>Skills</li>
+                    </a>
+                    <a class="poppins-thin" href="#Projects" onclick="toggleMenu()">
+                        <li>Projects</li>
+                    </a>
+                    <a class="poppins-thin" href="#contact" onclick="toggleMenu()">
+                        <li>Contact Me</li>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+
+        <section class="first">
+            <div class="firsec">
+                <div class="left poppins-black ">
+                    <span>Hi My name is </span>
+                    <span style="color: #43126a;">Sahil</span>
+                    <span>And I am a Passionated </span>
+                    <span id="element"></span>
+                </div>
+                <div class="right">
+                    <img src="port_image/bgpro.png" alt="" id="animated-img">
+                </div>
+            </div>
+            <div class="line"></div>
+        </section>
+
+        <section class="Second" id="about">
+            <div class="secsec poppins-black">
+                <span class="spaHead">About me</span>
+                <span class="spaCon section-text">Hello! I"m Sahil, a dedicated and passionate web developer with a love
+                    for creating beautiful and functional websites. With a strong background in graphic design and a
+                    keen eye for detail, I strive to bring unique and effective digital solutions to life.</span>
+
+                <span class="spaCon section-text">My journey in the world of technology began with a fascination for how
+                    things work on the web. This curiosity quickly turned into a full-fledged career, driving me to
+                    learn and master various programming languages, frameworks, and design principles. Over the years,
+                    I"ve honed my skills in HTML, CSS, JavaScript, and Python, as well as in design tools like Adobe
+                    Photoshop and Illustrator.</span>
+
+            </div>
+            <div class="line"></div>
+        </section>
+
+        <section class="third" id="skills">
+            <div class="secsec poppins-black">
+                <span class="spaHead">Skills </span>
+                <span class="discription spaCon section-text">Here are some of the technologies and tools I work
+                    with:</span>
+
+                <li style="list-style: none;">
+                    <ul>
+                        <div class="header">
+                            <span>Html and Css</span>
+                            <button class="toggle-button">+</button>
+                        </div>
+                        <div class="content">
+                            <p>HTML (HyperText Markup Language) and CSS (Cascading Style Sheets) are fundamental
+                                technologies for web development. HTML structures the content on a web page using a
+                                system of tags for elements like headings, paragraphs, and images. CSS enhances the
+                                visual presentation by applying styles such as colors, fonts, and layouts. Together,
+                                HTML and CSS enable the creation of well-structured, visually appealing, and responsive
+                                web pages, making them essential skills for any web developer.</p>
+                        </div>
+                    </ul>
+                    <ul>
+                        <div class="header">
+                            <span>JavaScript</span>
+                            <button class="toggle-button">+</button>
+                        </div>
+                        <div class="content">
+                            <p>I have extensive experience in JavaScript, utilizing its versatility to create dynamic
+                                and interactive web applications. My work involves writing clean, efficient code and
+                                leveraging modern ES6+ features to enhance performance and maintainability.</p>
+                        </div>
+                    </ul>
+                    <ul>
+                        <div class="header">
+                            <span>Node.js</span>
+                            <button class="toggle-button">+</button>
+                        </div>
+                        <div class="content">
+                            <p>In my projects with Node.js, I have built robust server-side applications and RESTful
+                                APIs. I am proficient in asynchronous programming and have used various Node.js
+                                frameworks like Express to streamline development and improve scalability.</p>
+                        </div>
+                    </ul>
+                    <ul>
+                        <div class="header">
+                            <span>React</span>
+                            <button class="toggle-button">+</button>
+                        </div>
+                        <div class="content">
+                            <p>My experience with React includes developing responsive, component-based user interfaces.
+                                I have worked with state management libraries like Redux and Context API, and have
+                                implemented best practices for optimizing performance and ensuring a seamless user
+                                experience.</p>
+                        </div>
+                    </ul>
+                    <ul>
+                        <div class="header">
+                            <span>Graphic Designing</span>
+                            <button class="toggle-button">+</button>
+                        </div>
+                        <div class="content">
+                            <p>I have a strong background in graphic design, creating visually appealing graphics for
+                                web and print media. My skills include using tools like Adobe Photoshop, Illustrator,
+                                and InDesign to produce logos, banners, and other marketing materials that align with
+                                brand identity.</p>
+                        </div>
+                    </ul>
+                    <ul>
+                        <div class="header">
+                            <span>UI/UX</span>
+                            <button class="toggle-button">+</button>
+                        </div>
+                        <div class="content">
+                            <p>In UI design, I focus on crafting intuitive and aesthetically pleasing interfaces. I
+                                ensure that designs are user-centered, emphasizing accessibility and consistency across
+                                different devices and platforms, using tools like Sketch and Figma. </br> My UX work
+                                involves understanding user behavior and creating designs that enhance usability and
+                                satisfaction. I conduct user research, create wireframes and prototypes, and perform
+                                usability testing to refine interfaces and improve the overall user journey.</p>
+                        </div>
+                    </ul>
+                </li>
+
+            </div>
+            <div class="line"></div>
+        </section>
+
+        <section class="third Mobile" id="Projects">
+            <div class="secsec poppins-black">
+                <span class="spaHead">Projects</span>
+                <span class="discription spaCon section-text">Here are some of the Projects which I've worked on:</span>
+
+                <li class="list">
+                    <ul>
+                        <div class="header">
+                            <span>Ajio Homepage Clone</span>
+                            <button class="toggle-button">+</button>
+                        </div>
+                        <div class="content">
+                            <div class="cont">
+                                <button class="poppins-thin"><a
+                                        href="https://github.com/Sahill766/ajio.git">Code</a></button>
+                                <a href="ajio.html"><button class="poppins-thin">Live Demo</button></a>
+                            </div>
+                        </div>
+                    </ul>
+
+                    <ul>
+                        <div class="header">
+                            <span>Ajio Luxe Homepage Clone</span>
+                            <button class="toggle-button">+</button>
+                        </div>
+                        <div class="content">
+                            <div class="cont">
+                                <button class="poppins-thin"><a
+                                        href="https://github.com/Sahill766/luxe.git">Code</a></button>
+                                <a href="luxe.html"><button class="poppins-thin">Live Demo</button></a>
+                            </div>
+                        </div>
+                    </ul>
+
+                    <ul>
+                        <div class="header">
+                            <span>Spotify Homepage Clone</span>
+                            <button class="toggle-button">+</button>
+                        </div>
+                        <div class="content">
+                            <div class="cont">
+                                <button class="poppins-thin"><a
+                                        href="https://github.com/Sahill766/spotify.git">Code</a></button>
+                                <a href="spotify_home.html"><button class="poppins-thin">Live Demo</button></a>
+                            </div>
+                        </div>
+                    </ul>
+
+                    <ul>
+                        <div class="header">
+                            <span>myntra Homepage Clone</span>
+                            <button class="toggle-button">+</button>
+                        </div>
+                        <div class="content">
+                            <div class="cont">
+                                <button class="poppins-thin"><a
+                                        href="https://github.com/Sahill766/myntra.git">Code</a></button>
+                                <a href="myntra.html"><button class="poppins-thin">Live Demo</button></a>
+                            </div>
+                        </div>
+                    </ul>
+
+                    <ul>
+                        <div class="header">
+                            <span>Shopify Homepage Clone</span>
+                            <button class="toggle-button">+</button>
+                        </div>
+                        <div class="content">
+                            <div class="cont">
+                                <button class="poppins-thin"><a
+                                        href="https://github.com/Sahill766/shopify.git">Code</a></button>
+                                <a href="shopify.html"><button class="poppins-thin">Live Demo</button></a>
+                            </div>
+                        </div>
+                    </ul>
+
+                </li>
+            </div>
+
+            <div class="line"></div>
+        </section>
+
+        <section class="third computer" id="Project">
+            <div class="funt">
+                <div class="secsec poppins-black" style="width: 100%;">
+
+                    <span class="spaHead">Projects </span>
+
+                    <span class="discription spaCon section-text">Here are some of the Projects which I"ve worked
+                        in:</span>
+
+                    <div style="display: flex; align-items: center;">
+                        <div class="pictures-pro">
+
+                            <div class="luxe web">
+                                <div class="des"><span>Ajio Luxe</span></div>
+                                <div class="image">
+                                    <a href="luxe.html">
+                                        <img src="port_image/Screenshot (127).png" alt="">
+                                    </a>
+                                </div>
+                                <div class="cont">
+                                    <button class="poppins-thin"><a
+                                            href="https://github.com/Sahill766/luxe.git">Code</a></button>
+                                    <a href="luxe.html">
+                                        <button class="poppins-thin">Live Demo</button>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="Shopify web">
+                                <div class="des"><span>Shopify</span></div>
+                                <div class="image">
+                                    <a href="shopify.html"><img src="port_image/Screenshot 2024-07-08 235603.png"
+                                            alt=""></a>
+                                </div>
+                                <div class="cont">
+                                    <button class="poppins-thin"><a
+                                            href="https://github.com/Sahill766/ajio.git">Code</a></button>
+                                    <a href="shopify.html"><button class="poppins-thin">Live Demo</button></a>
+                                </div>
+                            </div>
+
+                            <div class="netflix web">
+                                <div class="des"><span>Netflix</span></div>
+                                <div class="image">
+                                    <a href="netflix.htm"> <img src="port_image/Screenshot (129).png" alt=""></a>
+
+                                </div>
+                                <div class="cont">
+                                    <button class="poppins-thin"><a
+                                            href="https://github.com/Sahill766/netflix.git">Code</a></button>
+                                    <a href="netflix.htm"><button class="poppins-thin">Live Demo</button></a>
+                                </div>
+                            </div>
+
+                            <div class="myntra web">
+                                <div class="des"><span>Myntra web</span></div>
+                                <div class="image">
+                                    <a href="myntra.html"><img src="port_image/Screenshot 2024-07-09 110706.png"
+                                            alt=""></a>
+                                </div>
+                                <div class="cont">
+                                    <button class="poppins-thin"><a
+                                            href="https://github.com/Sahill766/ajio.git">Code</a></button>
+                                    <a href="myntra.html"><button class="poppins-thin">Live Demo</button></a>
+                                </div>
+                            </div>
+
+                            <div class="ajio web">
+                                <div class="des"><span>Ajio</span></div>
+                                <div class="image">
+                                    <a href="ajio.html"><img src="port_image/Screenshot (126).png" alt=""></a>
+                                </div>
+                                <div class="cont">
+                                    <button class="poppins-thin"><a
+                                            href="https://github.com/Sahill766/ajio.git">Code</a></button>
+                                    <a href="ajio.html"><button class="poppins-thin">Live Demo</button></a>
+                                </div>
+                            </div>
+
+                            <div class="spotify web">
+                                <div class="des"><span>Spotify</span></div>
+                                <div class="image">
+                                    <a href="spotify_home.html"><img src="port_image/Screenshot (128).png" alt=""></a>
+                                </div>
+                                <div class="cont">
+                                    <button class="poppins-thin"><a
+                                            href="https://github.com/Sahill766/spotify.git">Code</a></button>
+                                    <a href="spotify_home.html"><button class="poppins-thin">Live Demo</button></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <span class="right-arrow arro" id="toggle-icon">
+                            <svg id="left-arrow" xmlns="http://www.w3.org/2000/svg" height="30px"
+                                viewBox="0 -960 960 960" width="30px" class="aerr" fill="#e8eaed" style="display:none;">
+                                <path
+                                    d="m400-718.67 47.33 47.34L288-512h512v66.67H288l160 160L400-238 160-478.67l240-240Z" />
+                            </svg>
+                            <svg id="right-arrow" xmlns="http://www.w3.org/2000/svg" height="30px"
+                                viewBox="0 -960 960 960" width="30px" class="aerr" fill="#e8eaed">
+                                <path
+                                    d="m560-241.33-47.33-47.34L672-448H160v-66.67h512l-160-160L559.33-722 800-481.33l-240 240Z" />
+                            </svg>
+                        </span>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="line"></div>
+        </section>
+
+        <section class="third" id="contact">
+
+
+            <div class="secsec left_por poppins-black">
+                <span class="spaHead">Contact me </span>
+                <section class="co_info">
+                    <div class="info2">
+                        <a class="info2" href="mailto:sahil200804@gmail.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                                fill="#e8eaed">
+                                <path
+                                    d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302 340-223v-55L480-522 140-740v55l340 223Z" />
+                            </svg>
+                            <span class="spaCon conn">Sahil200804@gmail.com</span></a>
+                    </div>
+                    <div class="info2">
+                        <a class="info2" href="#contact"><svg xmlns="http://www.w3.org/2000/svg" height="48px"
+                                viewBox="0 -960 960 960" width="48px">
+                                <path
+                                    d="M795-120q-116 0-236.5-56T335-335Q232-438 176-558.5T120-795q0-19 13-32t32-13h140q14 0 24 10t14 25l27 126q2 14-.5 25.5T359-634L259-533q26 44 55 82t64 72q37 38 78 69.5t86 55.5l95-98q10-11 23-15t26-2l119 26q15 4 25 16t10 27v135q0 19-13 32t-32 13Z" />
+                            </svg>
+                            <span class="spaCon conn">626627****</span></a>
+                    </div>
+                </section>
+                <section class="So_info">
+
+
+                    <a href="https://github.com/Sahill766">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" class="d-block">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                            </path>
+                        </svg>
+
+                    </a>
+
+                    <a href="https://x.com/Sahil6266275579">
+                        <?xml version="1.0" ?><svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" width="24px"
+                            height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+                            xml:space="preserve">
+                            <g>
+                                <polygon
+                                    points="12.153992,10.729553 8.088684,5.041199 5.92041,5.041199 10.956299,12.087097 11.59021,12.97345    15.900635,19.009583 18.068909,19.009583 12.785217,11.615906  " />
+                                <path
+                                    d="M21.15979,1H2.84021C1.823853,1,1,1.823853,1,2.84021v18.31958C1,22.176147,1.823853,23,2.84021,23h18.31958   C22.176147,23,23,22.176147,23,21.15979V2.84021C23,1.823853,22.176147,1,21.15979,1z M15.235352,20l-4.362549-6.213013   L5.411438,20H4l6.246887-7.104675L4,4h4.764648l4.130127,5.881958L18.06958,4h1.411377l-5.95697,6.775635L20,20H15.235352z" />
+                            </g>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/sahil-chandrakar-b9893829a/">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" id="Layer_1" style="height: 41px;
+                        width: 41px;" class="Svg-sc-ytk21e-0 dYnaPI">
+                            <path
+                                d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.instagram.com/this_is_sahill/?hl=en">
+                        <svg xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img" aria-hidden="true"
+                            style="height: 41px;
+                        width: 36px;" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dCAvla">
+                            <path
+                                d="M8 1.44c2.136 0 2.389.009 3.233.047.78.036 1.203.166 1.485.276.348.128.663.332.921.598.266.258.47.573.599.921.11.282.24.706.275 1.485.039.844.047 1.097.047 3.233s-.008 2.389-.047 3.232c-.035.78-.166 1.204-.275 1.486a2.654 2.654 0 0 1-1.518 1.518c-.282.11-.706.24-1.486.275-.843.039-1.097.047-3.233.047s-2.39-.008-3.232-.047c-.78-.035-1.204-.165-1.486-.275a2.477 2.477 0 0 1-.921-.599 2.477 2.477 0 0 1-.599-.92c-.11-.282-.24-.706-.275-1.486-.038-.844-.047-1.096-.047-3.232s.009-2.39.047-3.233c.036-.78.166-1.203.275-1.485.129-.348.333-.663.599-.921a2.49 2.49 0 0 1 .92-.599c.283-.11.707-.24 1.487-.275.843-.038 1.096-.047 3.232-.047L8 1.441zm.001-1.442c-2.172 0-2.445.01-3.298.048-.854.04-1.435.176-1.943.373a3.928 3.928 0 0 0-1.417.923c-.407.4-.722.883-.923 1.417-.198.508-.333 1.09-.372 1.942C.01 5.552 0 5.826 0 8c0 2.172.01 2.445.048 3.298.04.853.174 1.433.372 1.941.2.534.516 1.017.923 1.417.4.407.883.722 1.417.923.508.198 1.09.333 1.942.372.852.039 1.126.048 3.299.048 2.172 0 2.445-.01 3.298-.048.853-.04 1.433-.174 1.94-.372a4.087 4.087 0 0 0 2.34-2.34c.199-.508.334-1.09.373-1.942.039-.851.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.853-.174-1.433-.372-1.94a3.924 3.924 0 0 0-.923-1.418A3.928 3.928 0 0 0 13.24.42c-.508-.197-1.09-.333-1.942-.371-.851-.041-1.125-.05-3.298-.05l.001-.001z">
+                            </path>
+                            <path
+                                d="M8 3.892a4.108 4.108 0 1 0 0 8.216 4.108 4.108 0 0 0 0-8.216zm0 6.775a2.668 2.668 0 1 1 0-5.335 2.668 2.668 0 0 1 0 5.335zm4.27-5.978a.96.96 0 1 0 0-1.92.96.96 0 0 0 0 1.92z">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UCMGAOwOOdfK8c1caSQDQNOQ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" id="Layer_1" style="height: 43px;
+                        width: 45px;" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                            image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                            viewBox="0 0 640 640">
+                            <path
+                                d="M633.468 192.038s-6.248-44.115-25.477-63.485c-24.366-25.477-51.65-25.642-64.123-27.118-89.493-6.52-223.904-6.52-223.904-6.52h-.236s-134.352 0-223.893 6.52c-12.52 1.523-39.768 1.63-64.123 27.118-19.24 19.37-25.358 63.485-25.358 63.485S-.012 243.806-.012 295.681v48.509c0 51.768 6.366 103.643 6.366 103.643s6.248 44.114 25.358 63.52c24.355 25.477 56.363 24.65 70.655 27.367 51.237 4.89 217.644 6.366 217.644 6.366s134.529-.237 224.022-6.638c12.52-1.477 39.756-1.63 64.123-27.119 19.24-19.37 25.476-63.532 25.476-63.532S640 396.03 640 344.154v-48.508c-.13-51.769-6.497-103.643-6.497-103.643l-.035.035zm-379.8 211.007V223.173L426.56 313.41l-172.892 89.635z" />
+                        </svg>
+                    </a>
+
+                </section>
+                <section class="down">
+                    <button id="down">Download CV</button>
+                </section>
+            </div>
+
+
+            <div class="right_por">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="4b632d1e-19d2-41ee-b4fc-142af078f1df">
+                    <input name="Name" type="text" placeholder="Your Name" class="info" required>
+                    <input name="Mail" type="email" placeholder="Your Email" class="info" required>
+                    <input name="Mobile" type="tel" placeholder="Your Contact No." class="info" required>
+                    <textarea name="Your Massage" placeholder="Your message" id="Massage" class="info"
+                        required></textarea>
+                    <button type="submit" class="batton" id="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="poppins-thin">
+        <span>© 2024 Sahil </span>
+        <span>All Rights Are Reserved</span>
+    </footer>
+
+    <script src="portfolio.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</body>
+
+</html>
