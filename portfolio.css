@@ -81,6 +81,7 @@ html {
     position: absolute;
     left: 50%;
     bottom: 0;
+    border-radius:10px;
     width: 0;
     height: 1px;
     background: #f2c4fd;
@@ -239,6 +240,7 @@ html {
   height: 2px;
   bottom: -2px;
   left: 0;
+  border-radius:10px;
   background-color: #ffe4e4;
   transition: width 0.5s ease;
 }
