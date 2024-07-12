@@ -874,6 +874,7 @@ background-color: transparent; /* Prevents background color change on click */
     margin-right: -100px;
     display: flex;
     border-radius: 10pc;
+    cursor:pointer;
     align-items: center;
     justify-content: center;
 }
