@@ -446,8 +446,14 @@ button img {
 }
 
 .faqcon {
-    width: 77%;
+    width: 89%;
+    margin: 24px 0;
+}
+@media (min-width:600px) {
+    .faqcon {
+        width: 77%;
     margin: 24px;
+    }
 }
 
 .faqmain {
@@ -490,6 +496,7 @@ button img {
     gap: 16px;
     margin-top: 45px;
     align-items: center;
+    text-align: center;
 
 }
 
@@ -587,18 +594,23 @@ li a:hover::after{
 
 .anim {
     background-color: black;
-    width: 100%;
-    font-size: 24px;
-    gap: 1px;
-    font-weight: 400;
-    color: white;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    cursor: pointer;
-    margin: 5px;
-    list-style-type: none;
+        width: 100%;
+        font-size: 18px;
+        gap: 1px;
+        font-weight: 400;
+        color: white;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        cursor: pointer;
+        margin: 5px;
+        list-style-type: none;
+}
+@media (min-width:600px) {
+    .anim {
+       font-size: 24px;
+    }
 }
 
 .header {
@@ -606,10 +618,14 @@ li a:hover::after{
     background: rgb(45 45 45);
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding:20px;
     transition: all 0.5s ease-in-out;
 }
-
+@media (min-width:600px) {
+    .header {
+       padding:10px 20px;
+    }
+}
 .header:hover {
     transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
     background-color: rgb(65, 65, 65);
@@ -652,10 +668,7 @@ li a:hover::after{
     transform: rotate(45deg);
 }
 
-.toggle-button svg {
-    width: 36px;
-    height: 64px;
-}
+
 .content p {
     margin: 0;
     padding: 0;
@@ -667,16 +680,8 @@ li a:hover::after{
 .content.visible p {
     opacity: 1;
     transform: translateY(0);
-    font-size: 24px;
+    font-size: 1em;
     color: #ffffff;
-}
-
-.content.visible {
-    max-height: 160px;
-    overflow-y: scroll;
-    padding: 20px 26px;
-    background-color: #2b2b2b;
-    scrollbar-width: none;
 }
 
 .some {
@@ -698,36 +703,6 @@ li a:hover::after{
     align-items: center;
 }
 
-.anim {
-    background-color: black;
-    width: 100%;
-    font-size: 24px;
-    gap: 1px;
-    font-weight: 400;
-    color: white;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    cursor: pointer;
-    margin: 5px;
-    list-style-type: none;
-}
-
-.header {
-    display: flex;
-    background: rgb(45 45 45);
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    transition: all 0.5s ease-in-out;
-}
-
-.header:hover {
-    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
-    background-color: rgb(65, 65, 65);
-}
-
 .content {
     max-height: 0;
     /* width: 100%; */
@@ -766,8 +741,14 @@ li a:hover::after{
 }
 
 .toggle-button svg {
-    width: 36px;
-    height: 64px;
+  height: 24px;
+  width: 24px;
+}
+@media (min-width:600px) {
+    .toggle-button svg {
+        width: 36px;
+        height: 64px;
+    }
 }
 .content p {
     margin: 0;
@@ -777,19 +758,13 @@ li a:hover::after{
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-.content.visible p {
-    opacity: 1;
-    transform: translateY(0);
-    font-size: 24px;
-    color: #ffffff;
-}
+
 
 .content.visible {
-    max-height: 160px;
-    overflow-y: scroll;
+    max-height: fit-content;
     padding: 20px 26px;
     background-color: #2b2b2b;
-    scrollbar-width: none;
+   
 }
 
 .some {
