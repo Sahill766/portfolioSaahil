@@ -2,16 +2,19 @@
 // Function to initialize Typed.js animation
 function initializeTypedAnimation() {
     var typed = new Typed("#element", {
-        strings: ["Web Developer", "Graphic Designer", " Web Designer."],
-        typeSpeed: 60,
-        backSpeed: 30,
-        backDelay: 1000,
-        startDelay: 500,
-        loop: false,
+        strings: ["Web Developer", "Graphic Designer", "Web Designer."],
+        typeSpeed: 30,       // Adjusted typing speed for a natural feel
+        backSpeed: 40,        // Adjusted backspacing speed for natural erasing
+        backDelay: 1500,      // Slight delay before starting to backspace
+        startDelay: 1500,      // Initial delay before starting the typing animation
+        loop: false,           // Loop the animation
         showCursor: true,
-        cursorChar: "|"
+        cursorChar: "  |",      // Simplified cursor character for a cleaner look
+        smartBackspace: true, // Delay before fade out starts
     });
 }
+
+
 
 
 /*image animation*/
@@ -85,7 +88,6 @@ document.querySelectorAll(".header").forEach(header => {
 });
 
 
-/*to add right arrow */
 document.addEventListener('DOMContentLoaded', function () {
     const toggleIcon = document.getElementById('toggle-icon');
     const leftArrow = document.getElementById('left-arrow');
@@ -93,26 +95,36 @@ document.addEventListener('DOMContentLoaded', function () {
     const picturesPro = document.querySelector('.pictures-pro');
     let scrollAmount = 0;
     const scrollStep = picturesPro.clientWidth / 1; // Adjust this value for smoother scrolling
+
+    function updateArrows() {
+        const maxScrollLeft = picturesPro.scrollWidth - picturesPro.clientWidth;
+        if (scrollAmount >= maxScrollLeft) {
+            rightArrow.style.display = 'none';
+            leftArrow.style.display = 'block';
+        } else {
+            rightArrow.style.display = 'block';
+            leftArrow.style.display = 'none';
+        }
+    }
+
     toggleIcon.addEventListener('click', function () {
         const maxScrollLeft = picturesPro.scrollWidth - picturesPro.clientWidth;
         if (scrollAmount < maxScrollLeft) {
             scrollAmount = Math.min(scrollAmount + scrollStep, maxScrollLeft);
-            picturesPro.scrollTo({
-                left: scrollAmount,
-                behavior: 'smooth'
-            });
-            if (scrollAmount >= maxScrollLeft) {
-                rightArrow.style.display = 'none';
-                leftArrow.style.display = 'block'; // Change to left arrow icon
-            }
         } else {
             scrollAmount = 0;
-            picturesPro.scrollTo({
-                left: scrollAmount,
-                behavior: 'smooth'
-            });
-            rightArrow.style.display = 'block';
-            leftArrow.style.display = 'none'; // Change back to right arrow icon
         }
+        picturesPro.scrollTo({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+        updateArrows();
     });
+
+    updateArrows();
 });
+
+
+
+
+
