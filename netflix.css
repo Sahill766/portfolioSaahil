@@ -2,6 +2,23 @@
     margin: 0;
     padding: 0;
 }
+/* Disabling blue background on click and text selection for links and buttons */
+* {
+-webkit-tap-highlight-color: transparent; /* Removes the blue highlight on mobile browsers */
+user-select: none; /* Disables text selection */
+outline: none; /* Removes the outline on focus */
+}
+
+a:active, button:active {
+background-color: transparent; /* Prevents background color change on click */
+
+}
+::selection {
+    background: yellow;
+    /* Changes the background color of the selected text */
+    color: black;
+    /* Changes the text color of the selected text */
+}
 
 body {
     background-color: black;
