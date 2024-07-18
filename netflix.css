@@ -9,7 +9,7 @@ user-select: none; /* Disables text selection */
 outline: none; /* Removes the outline on focus */
 }
 
-a:active, button:active {
+.header:active, select:active {
 background-color: transparent; /* Prevents background color change on click */
 
 }
